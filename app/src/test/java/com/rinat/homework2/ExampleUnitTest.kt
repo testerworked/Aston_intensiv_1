@@ -1,4 +1,4 @@
-package com.rinat.aston_intensiv_1
+package com.rinat.homework2
 
 import org.junit.Test
 

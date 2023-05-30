@@ -1,4 +1,4 @@
-package com.rinat.aston_intensiv_1
+package com.rinat.homework2
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
@@ -19,6 +19,6 @@ class ExampleInstrumentedTest {
     fun useAppContext() {
         // Context of the app under test.
         val appContext = InstrumentationRegistry.getInstrumentation().targetContext
-        assertEquals("com.rinat.aston_intensiv_1", appContext.packageName)
+        assertEquals("com.rinat.homework2", appContext.packageName)
     }
 }

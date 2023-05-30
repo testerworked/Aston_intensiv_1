@@ -1,12 +1,10 @@
 <resources>
-    <string name="app_name">Aston_intensiv_1</string>
-    <string name="home_work">Home Work 2</string>
-    <string name="button_first_1">Button 1.1</string>
-    <string name="button_first_2A">Button 1.2A</string>
-    <string name="button_first_2B">Button 1.2B</string>
-    <string name="button_first_3">Button 1.3</string>
-    <string name="button_first_4">Button 1.4</string>
-    <string name="button_second_1">Button 2.1</string>
-    <string name="button_second_2">Button 2.2</string>
-    <string name="button_second_3">Button 2.3</string>
+    <string name="app_name">HomeWork2</string>
+
+    <string name="button_label_toast">Toast</string>
+    <string name="button_label_count">Count</string>
+    <string name="count_initial_value">0</string>
+    <string name="toast_message">Hello Toast!</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
 </resources>
