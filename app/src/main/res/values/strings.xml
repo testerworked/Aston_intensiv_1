@@ -1,10 +1,12 @@
 <resources>
     <string name="app_name">HomeWork2</string>
 
-    <string name="button_label_toast">Toast</string>
+    <string name="button_label_toast">Next Sample</string>
     <string name="button_label_count">Count</string>
     <string name="count_initial_value">0</string>
-    <string name="toast_message">Hello Toast!</string>
+    <string name="toast_message">Open Next Sample Please!</string>
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

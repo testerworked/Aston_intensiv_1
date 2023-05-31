@@ -27,6 +27,11 @@ class MainFragment : Fragment(R.layout.fragment_main) {
         super.onViewCreated(view, savedInstanceState)
 
         view.findViewById<Button>(R.id.button_toast).setOnClickListener {
+            parentFragmentManager.beginTransaction()
+                .replace(R.id.fragment_container, BlankFragment(), BlankFragment::class.getTag())
+                .addToBackStack(BlankFragment::class.getTag())
+                .commit()
+
             Toast.makeText(
                 this.context, R.string.toast_message,
                 Toast.LENGTH_SHORT
