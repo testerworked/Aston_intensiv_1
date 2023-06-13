@@ -11,6 +11,7 @@ import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.app.NotificationCompat.getColor
 import androidx.core.os.bundleOf
 import androidx.fragment.app.Fragment
 import com.rinat.homework2.databinding.FragmentMainBinding
@@ -18,7 +19,13 @@ import com.rinat.homework2.databinding.FragmentMainBinding
 
 private const val MAIN_FRAGMENT_KEY = "MAIN_FRAGMENT_KEY"
 private var mulCount = 0
+enum class Constants {
+    TEXT,
+    COUNT,
+    SHOPPING_CONSTANTS,
+    SHOPPING_ITEMS,
 
+}
 
 
 class MainFragment : Fragment(R.layout.fragment_main) {
@@ -38,6 +45,14 @@ class MainFragment : Fragment(R.layout.fragment_main) {
             ).show()
         }
 
+        if(savedInstanceState != null){
+            mulCount = savedInstanceState.getInt(Constants.COUNT.name)
+            view.findViewById<TextView>(R.id.show_count).text = mulCount.toString()
+            if(mulCount != 0){
+
+            }
+        }
+
         view.findViewById<Button>(R.id.button_count).setOnClickListener {
             mulCount++
             view.findViewById<TextView>(R.id.show_count).text = Integer.toString(mulCount)
@@ -45,7 +60,10 @@ class MainFragment : Fragment(R.layout.fragment_main) {
 
     }
 
-
+    override fun onSaveInstanceState(outState: Bundle) {
+        super.onSaveInstanceState(outState)
+        outState.putInt(Constants.COUNT.name, mulCount)
+    }
 
 
 
