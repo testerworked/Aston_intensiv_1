@@ -12,7 +12,7 @@ import androidx.core.os.bundleOf
 
 private const val MAIN_FRAGMENT_KEY = "MAIN_FRAGMENT_KEY"
 private var mulCount = 0
-class HWFragmentOneTwo : Fragment(R.layout.fragment_blank) {
+class HWFragmentOneTwo : Fragment(R.layout.fragment_h_w_one_two) {
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -24,7 +24,7 @@ class HWFragmentOneTwo : Fragment(R.layout.fragment_blank) {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragment_blank, container, false)
+        return inflater.inflate(R.layout.fragment_h_w_one_two, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
