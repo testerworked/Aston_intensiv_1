@@ -12,7 +12,7 @@ import androidx.core.os.bundleOf
 
 private const val MAIN_FRAGMENT_KEY = "MAIN_FRAGMENT_KEY"
 private var mulCount = 0
-class BlankFragment : Fragment(R.layout.fragment_blank) {
+class HWFragmentOneTwo : Fragment(R.layout.fragment_blank) {
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -31,8 +31,8 @@ class BlankFragment : Fragment(R.layout.fragment_blank) {
         super.onViewCreated(view, savedInstanceState)
         view.findViewById<Button>(R.id.button_toast).setOnClickListener {
             parentFragmentManager.beginTransaction()
-                .replace(R.id.fragment_container, BlankFragment(), BlankFragment::class.getTag())
-                .addToBackStack(BlankFragment::class.getTag())
+                .replace(R.id.fragment_container, HWFragmentOneTwo(), HWFragmentOneTwo::class.getTag())
+                .addToBackStack(HWFragmentOneTwo::class.getTag())
                 .commit()
 
             Toast.makeText(

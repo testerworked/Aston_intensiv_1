@@ -3,7 +3,7 @@ package com.rinat.homework2
 import android.os.Bundle
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
-import com.rinat.homework2.BlankFragment.Companion.MAIN_FRAGMENT_TAG
+import com.rinat.homework2.HWFragmentOneTwo.Companion.MAIN_FRAGMENT_TAG
 
 
 
@@ -21,7 +21,7 @@ class MainActivity : AppCompatActivity() {
 
         if (fragment == null) {
             supportFragmentManager.beginTransaction()
-                .replace(R.id.fragment_container, BlankFragment.getInstance(), MAIN_FRAGMENT_TAG)
+                .replace(R.id.fragment_container, HWFragmentOneTwo.getInstance(), MAIN_FRAGMENT_TAG)
                 .commit()
         }
 
