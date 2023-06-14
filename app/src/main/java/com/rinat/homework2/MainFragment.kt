@@ -33,7 +33,26 @@ class MainFragment : Fragment(R.layout.fragment_main) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        view.findViewById<Button>(R.id.codingChallenge1).setOnClickListener {
+            parentFragmentManager.beginTransaction()
+                .replace(R.id.fragment_container, ChallengeFirst(), ChallengeFirst::class.getTag())
+                .addToBackStack(MainFragment::class.getTag())
+                .commit()
+        }
 
+        view.findViewById<Button>(R.id.buttonHW11).setOnClickListener {
+            parentFragmentManager.beginTransaction()
+                .replace(R.id.fragment_container, HWFragmentOneOne(), HWFragmentOneOne::class.getTag())
+                .addToBackStack(MainFragment::class.getTag())
+                .commit()
+        }
+
+        view.findViewById<Button>(R.id.buttonHW12).setOnClickListener {
+            parentFragmentManager.beginTransaction()
+                .replace(R.id.fragment_container, HWFragmentOneTwo(), HWFragmentOneTwo::class.getTag())
+                .addToBackStack(MainFragment::class.getTag())
+                .commit()
+        }
 
     }
 

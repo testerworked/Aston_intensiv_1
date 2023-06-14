@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">HomeWork2</string>
 
-    <string name="button_label_toast">Next Sample</string>
+    <string name="button_label_toast">Main Menu</string>
     <string name="button_label_count">Count</string>
     <string name="count_initial_value">0</string>
     <string name="toast_message">Open Next Sample Please!</string>
