@@ -15,5 +15,19 @@ class ChallengeFirst : Fragment(R.layout.fragment_challenge_first) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        try {
+            throw java.lang.IllegalArgumentException()
+        }
+        catch (exceptionAbout : IllegalArgumentException){
+            Log.e("Challenge 1", "Exception")
+        }
+
+        view.findViewById<Button>(R.id.buttonCh1Back).setOnClickListener {
+            parentFragmentManager.beginTransaction()
+                .replace(R.id.fragment_container, MainFragment(), MainFragment::class.getTag())
+                .addToBackStack(MainFragment::class.getTag())
+                .commit()
+        }
+
     }
 }
