@@ -54,6 +54,54 @@ class MainFragment : Fragment(R.layout.fragment_main) {
                 .commit()
         }
 
+        view.findViewById<Button>(R.id.buttonHW13).setOnClickListener {
+            parentFragmentManager.beginTransaction()
+                .replace(R.id.fragment_container, HWFragmentOneThree(), HWFragmentOneThree::class.getTag())
+                .addToBackStack(MainFragment::class.getTag())
+                .commit()
+        }
+
+        view.findViewById<Button>(R.id.buttonCh21).setOnClickListener {
+            parentFragmentManager.beginTransaction()
+                .replace(R.id.fragment_container, ChallengeTwoOne(), ChallengeTwoOne::class.getTag())
+                .addToBackStack(MainFragment::class.getTag())
+                .commit()
+        }
+
+        view.findViewById<Button>(R.id.buttonHW21).setOnClickListener {
+            parentFragmentManager.beginTransaction()
+                .replace(R.id.fragment_container, HWFragmentTwoOne(), HWFragmentTwoOne::class.getTag())
+                .addToBackStack(MainFragment::class.getTag())
+                .commit()
+        }
+
+        view.findViewById<Button>(R.id.buttonCh22).setOnClickListener {
+            parentFragmentManager.beginTransaction()
+                .replace(R.id.fragment_container, ChallengeTwoTwo(), ChallengeTwoTwo::class.getTag())
+                .addToBackStack(MainFragment::class.getTag())
+                .commit()
+        }
+
+        view.findViewById<Button>(R.id.buttonHW22).setOnClickListener {
+            parentFragmentManager.beginTransaction()
+                .replace(R.id.fragment_container, HWFragmentTwoTwo(), HWFragmentTwoTwo::class.getTag())
+                .addToBackStack(MainFragment::class.getTag())
+                .commit()
+        }
+
+        view.findViewById<Button>(R.id.buttonCh23).setOnClickListener {
+            parentFragmentManager.beginTransaction()
+                .replace(R.id.fragment_container, ChallengeTwoThree(), ChallengeTwoThree::class.getTag())
+                .addToBackStack(MainFragment::class.getTag())
+                .commit()
+        }
+
+        view.findViewById<Button>(R.id.buttonHW23).setOnClickListener {
+            parentFragmentManager.beginTransaction()
+                .replace(R.id.fragment_container, HWFragmentTwoThree(), HWFragmentTwoThree::class.getTag())
+                .addToBackStack(MainFragment::class.getTag())
+                .commit()
+        }
     }
 
     override fun onSaveInstanceState(outState: Bundle) {

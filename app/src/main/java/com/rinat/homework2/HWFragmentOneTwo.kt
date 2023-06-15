@@ -39,6 +39,7 @@ class HWFragmentOneTwo : Fragment(R.layout.fragment_h_w_one_two) {
                 this.context, R.string.toast_message,
                 Toast.LENGTH_SHORT
             ).show()
+            mulCount = 0
         }
 
         if(savedInstanceState != null){
