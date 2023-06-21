@@ -6,35 +6,71 @@
     android:layout_height="match_parent"
     tools:context=".HWFragmentOneThree">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="200dp">
 
-        <TextView
-            android:id="@+id/hw13Text"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="15dp"
-            android:text="@string/home_work_1_3"
-            android:textAlignment="center"
-            android:textSize="23sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:ignore="MissingConstraints" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".lesson_1_3.Homework3Activity">
 
         <Button
             android:id="@+id/buttonHW13back"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="15dp"
+            android:layout_alignEnd="@+id/text_view_article_heading"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="-14dp"
+            android:layout_marginBottom="15dp"
             android:text="Back in Main Menu"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/hw13Text"
             tools:ignore="MissingConstraints" />
 
+        <TextView
+            android:id="@+id/text_view_article_heading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/article_margin"
+            android:layout_marginHorizontal="@dimen/article_margin"
+            android:background="@color/purple_700"
+            android:padding="@dimen/padding"
+            android:text="@string/article_title"
+            android:textAppearance=
+                "@android:style/TextAppearance.DeviceDefault.Large"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_view_article_heading"
+            android:layout_marginHorizontal="@dimen/article_margin">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/padding"
+                    android:text="@string/article_subtitle"
+                    android:textAppearance=
+                        "@android:style/TextAppearance.DeviceDefault" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:autoLink="web"
+                    android:lineSpacingExtra="@dimen/padding"
+                    android:padding="@dimen/padding"
+                    android:text="@string/article_text" />
+            </LinearLayout>
+
+        </ScrollView>
+
+    </RelativeLayout>
 
 </FrameLayout>
