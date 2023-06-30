@@ -43,7 +43,7 @@ class HWFragmentOneTwo : Fragment(R.layout.fragment_h_w_one_two) {
         }
 
         if(savedInstanceState != null){
-            mulCount = savedInstanceState.getInt(Constants.COUNT.name)
+            mulCount = savedInstanceState.getInt(MyBuffer.COUNT.name)
             view.findViewById<TextView>(R.id.show_count).text = mulCount.toString()
             if(mulCount != 0){
 
