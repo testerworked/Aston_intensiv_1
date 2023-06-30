@@ -9,7 +9,7 @@ import android.view.ViewGroup
 import android.widget.Button
 
 
-class ChallengeTwoThree : Fragment() {
+class ChallengeTwoThree : Fragment(R.layout.fragment_challenge_two_three) {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
