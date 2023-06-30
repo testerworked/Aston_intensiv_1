@@ -20,10 +20,10 @@ ChallengeTwoOne : Fragment(R.layout.fragment_challenge_two_one) {
             throw java.lang.IllegalArgumentException()
         }
         catch (exceptionAbout : IllegalArgumentException){
-            Log.e("Challenge 1", "Exception")
+            Log.e("Challenge 2.1", "Exception")
         }
 
-        view.findViewById<Button>(R.id.buttonCh1Back).setOnClickListener {
+        view.findViewById<Button>(R.id.buttonCh21Back).setOnClickListener {
             parentFragmentManager.beginTransaction()
                 .replace(R.id.fragment_container, MainFragment(), MainFragment::class.getTag())
                 .addToBackStack(MainFragment::class.getTag())
